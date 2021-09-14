@@ -1,0 +1,139 @@
+body {background: #161b22;color: #e3e3e3;}
+a{text-decoration: none;}
+h3{text-align: center; margin-top: 20px;}
+h3 svg{margin-right: 10px;}
+.Search_section{text-align: center;}
+#Search_input {width: 35%;}
+#Search_button {color: white; border-color: white;}
+
+.profile.card {
+display: flex;
+flex-wrap: wrap;
+}
+.user {
+width: 40%;
+text-align: center;
+}
+.user_image img {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+.profile.card {
+padding: 50px 30px;
+border: 1px solid #000;
+border-radius: 5px;
+margin: 50px auto;
+width: 70%;
+}
+.user_Name h1 {
+font-size: 35px;
+color: #ddd;
+}
+.user_image {
+margin-bottom: 10px;
+}
+.info {
+width: 50%;
+padding: 0 0 0 30px;
+}
+.information {
+list-style: none;
+}
+.information li p {
+font-size: 16px;
+text-transform: capitalize;
+color: white;
+margin: 0px 0 13px 0;
+}
+.information li p span {
+color: #2087d2;
+background: black;
+width: 100%;
+display: inline-block;
+padding: 0px 10px;
+margin-top: 5px;
+border-radius: 3px;
+}
+.viewMore a {
+color: white;
+background: green;
+padding: 10px 12px;
+border-radius: 5px;
+font-weight: 600;
+}
+
+.empty_input {
+background: #191919;
+padding: 100px;
+margin: 50px 0 0 0;
+color: red;
+border: 1px solid;
+text-align: center;
+}
+.User-not-find {
+background: #191919;
+padding: 100px;
+margin: 50px 0 0 0;
+color: rgb(0, 217, 255);
+border: 1px solid;
+text-align: center;
+}
+
+/* RESPONSIVE CSS HERE  */
+@media screen and (max-width: 960px) {
+    .user {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    .info {
+    width: 88%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info {
+        width: 78%;
+        }
+}
+@media screen and (max-width: 375px) {
+    #Search_input {
+        width: 70%;
+    }
+    .user_image img {
+        width: 150px;
+        height: 150px;
+    }
+    .user_Name h1 {
+        font-size: 25px;
+    }
+    .info {
+        width: 79%;
+        margin: 0;
+        padding: 15px;
+      }
+      .profile.card {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    #Search_input {
+        width: 90%;
+    }
+    .user_image img {
+        width: 150px;
+        height: 150px;
+    }
+    .user_Name h1 {
+        font-size: 25px;
+    }
+    .info {
+        width: 79%;
+        margin: 0;
+        padding: 15px;
+      }
+      .profile.card {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+}
