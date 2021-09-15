@@ -5,6 +5,7 @@ const ui = new UI()
 
 // ADD EVENTLISTNER
 SearchButton.addEventListener('click', SearchUser)
+SearchInput.addEventListener("keyup", EnterButton);
 
 // EVENTS FUNCTIONS 
 function SearchUser( e ) {
@@ -23,5 +24,12 @@ function SearchUser( e ) {
         })
     } else {
         ui.alert('Give an Username to find', 'empty_input')
+    }
+}
+
+function EnterButton(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        SearchButton.click();
     }
 }
